@@ -1,0 +1,66 @@
+PS C:\Users\USER\Desktop\terakoya> cd C:\Users\USER\Desktop\terakoya\git_challenge
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git init  
+Reinitialized existing Git repository in C:/Users/USER/Desktop/terakoya/git_challenge/.git/
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git add helllo_world.txt
+fatal: pathspec 'helllo_world.txt' did not match any files
+PS C:\Users\USER\Desktop\terakoya\git_challenge> ls
+
+
+    ディレクトリ: C:\Users\USER\Desktop\terakoya\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/06/10     21:14             13 hello_world.txt
+
+
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git add .\hello_world.txt
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git commit -m "テキストを追加\n課題" 
+[main 93dd16a] テキストを追加\n課題
+ 1 file changed, 1 insertion(+)
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git log
+commit 93dd16a68720ca036ebdffd851453f27b70756ee (HEAD -> main)
+Author: ikeno3661 <ikeno3661@gmail.com>
+Date:   Tue Jun 10 21:17:46 2025 +0900
+
+    テキストを追加\n課題
+
+commit 515e35d54e48d1f11d7e29d62ae8649cbd9fbc35
+Author: ikeno3661 <ikeno3661@gmail.com>
+Date:   Tue Jun 10 20:37:40 2025 +0900
+
+    テキストを追加　　課題提出のため
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git add .\hello_world.txt
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git commit -m "日本語テキストを追加"
+[main 8e0528e] 日本語テキストを追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\USER\Desktop\terakoya\git_challenge> git log
+commit 8e0528e31365c97ea4a8cbe7fbd2b15acc18a743 (HEAD -> main)
+Author: ikeno3661 <ikeno3661@gmail.com>
+Date:   Tue Jun 10 21:19:50 2025 +0900
+
+    日本語テキストを追加
+
+commit 93dd16a68720ca036ebdffd851453f27b70756ee
+Author: ikeno3661 <ikeno3661@gmail.com>
+Date:   Tue Jun 10 21:17:46 2025 +0900
+
+    テキストを追加\n課題
+
+commit 515e35d54e48d1f11d7e29d62ae8649cbd9fbc35
+Author: ikeno3661 <ikeno3661@gmail.com>
+Date:   Tue Jun 10 20:37:40 2025 +0900
+
+    テキストを追加　　課題提出のため
